@@ -228,7 +228,7 @@ inside `packge.json`
 now run `npm run dev`
 
 
-`http://localhost:9020/` you can see your app loaded successfully.
+`http://localhost:9000/` you can see your app loaded successfully.
 
 ---------------------
 
