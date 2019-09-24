@@ -10,10 +10,7 @@ module.exports = {
   },
   devServer: {
     contentBase: path.join(__dirname, "dist"),
-    compress: true,
-    port: 9000,
-    watchContentBase: true,
-    progress: true
+    port: 9000
   },
   module:{
     rules: [
@@ -23,7 +20,8 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['@babel/env','@babel/react']
+            presets: ['@babel/env','@babel/react'],
+            plugins: ['transform-class-properties']
           }
         }
       },
